@@ -1,10 +1,7 @@
-from dataclasses import fields
 from rest_framework import serializers
 from .models import Profile
 
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ['slackusername', 'backend', 'age', 'bio']
-
-
+        fields = ['slackUsername', 'backend', 'age', 'bio']
