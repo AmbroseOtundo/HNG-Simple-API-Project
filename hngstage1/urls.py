@@ -4,5 +4,5 @@ from biodata import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/biodata')
+    path('api/biodata', views.ProfileList.as_view)
 ]
